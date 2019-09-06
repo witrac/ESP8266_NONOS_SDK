@@ -216,5 +216,6 @@ user_init(void)
     at_port_print("\r\nready\r\n");
     at_cmd_array_regist(&at_custom_cmd[0], sizeof(at_custom_cmd)/sizeof(at_custom_cmd[0]));
 
+    wifi_set_opmode(STATION_MODE);
     // wifi_station_connect();
 }
